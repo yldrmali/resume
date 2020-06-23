@@ -1,0 +1,123 @@
+@import 'https://fonts.googleapis.com/css?family=EB+Garamond&subset=latin-ext';
+// @import url(https://fonts.googleapis.com/css?family=Lato);
+
+// HERE: Change this to change the overall font-size of your CV.
+// Ex.: `@rem: 14px` or `@rem: 12px`.
+@rem: 16px;
+
+* {
+  font-family: 'EB Garamond', serif;
+}
+
+html, body {
+  font-size: @rem;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 1.3rem;
+  color: @dark-grey;
+}
+
+h2 {
+  font-size: 1.05rem;
+  color: @grey;
+}
+
+.container {
+  max-width: 100%;
+  width: 85%;
+  padding: 20px 0 25px;
+}
+// clearfix
+
+.container:after, section:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.flex-row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex-column {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-align-start {
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.flex-align-center {
+  align-content: center;
+  align-items: center;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.flex-align-end {
+  align-content: flex-end;
+  align-items: flex-end;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.fifty {
+  width: 50%;
+  flex: 0 0 50%;
+}
+
+.padding-sides-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.padding-right-10 {
+  padding-right: 10px;
+}
+
+.padding-left-bs {
+  padding-left: @bs-col-padding-side;
+}
+
+@media (max-width: @screen-sm-max) {
+  .padding-left-bs {
+    padding-left: 0;
+  }
+}
+
+a,
+a:focus,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  border-bottom: 1px @grey dotted;
+}

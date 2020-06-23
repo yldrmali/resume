@@ -1,0 +1,83 @@
+@media (min-width: @screen-md-min) {
+  .half-page > div:first-of-type .section-header {
+    margin-top: 0;
+  }
+}
+
+.section-header {
+  display: table;
+  font-size: 1.5rem;
+  border-bottom: 2px @grey dashed;
+  margin-bottom: 0.7rem;
+  margin-top: 0.5rem;
+}
+
+main {
+  .block {
+    padding-bottom: 0.5rem;
+  }
+
+  section {
+    padding-bottom: 0.6rem;
+    flex: 1 0 100%;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    .bullets {
+      .padding-left-bs();
+      margin-left: 3px;
+
+      span {
+        position: relative;
+        left: -3px;
+      }
+    }
+
+    .section-inner-header + .bullets {
+      padding-top: 0.3rem;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-bottom: 0.2rem;
+    }
+
+    ul {
+      padding-left: 0;
+      margin-bottom: 0;
+      // padding-right: 0.9375rem; // Why ??
+      width: 100%;
+
+      li.inline {
+        float: left;
+      }
+    }
+
+    p {
+      padding: 0.3rem 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      color: @grey;
+      line-height: 1.3;
+    }
+
+    .experience-dateloc {
+      text-align: right;
+      flex: 1 0 auto;
+
+      .location {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+.col-md-12 {
+  padding-right: 0;
+}
